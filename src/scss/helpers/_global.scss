@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $body-font-family;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: $link-text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+img {
+  border-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-area {
+  padding: 0 10px;
+  position: relative;
+
+  @media (min-width: 1020px) {
+    padding: 0 29px 0 27px;
+  }
+
+  h1 {
+    margin: 20px 0 12px 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $heading-color;
+
+    @media (min-width: 768px) {
+      margin: 0 0 27px 0;
+    }
+  }
+
+  .title {
+    @media (max-width: 1019px) {
+      margin: 0 0 60px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 13px 15px;
+    }
+  }
+
+  .title-alt {
+    margin-bottom: 10px;
+
+    @media (min-width: 1020px) {
+      margin-bottom: 16px;
+    }
+  }
+}
