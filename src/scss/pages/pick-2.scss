@@ -88,3 +88,21 @@
     max-width: 98%;
     height: auto;
 }
+
+.banner-img {
+    max-width:100%;
+    width: 94%; 
+    margin-bottom: 4vh; 
+    margin-left: 18px;
+}
+
+.how-to-claim {
+    width:42%;
+    margin:20px 0 15px 0;
+}
+
+// Placed class on parent due to having 30+ child elements, going for DRY code
+.how-to-play-steps tr td {
+    text-align: left; 
+    vertical-align: top;
+}
