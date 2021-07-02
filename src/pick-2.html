@@ -12,6 +12,7 @@
     <link href="../dist/css/main.css" type="text/css" rel="stylesheet">
     <link href="../dist/css/pages/pick-2.css" type="text/css" rel="stylesheet" />
   </head>
+
   <body>
     <main id="content" class="wrapper">
       <div class="content-area">
@@ -19,62 +20,10 @@
 
           <h1>PICK 2</h1>
           <div class="info-container">
-            <aside class="list-info stretch">
-              <a href="#" class="link-section opener" ><span>Sections</span></a>
-              <ul id="subshown" class="list CMSListMenuUL">
-                <li class="list CMSListMenuHighlightedLI cap">
-                  <a class="list CMSListMenuLinkHighlighted" href="/Draw-Games/PICK-2.aspx">PICK 2</a>
-                </li>
-                <li class="cap pick3nav">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/PICK-3.aspx">PICK 3</a>
-                </li>
-                <li class="cap pick4nav">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/PICK-4.aspx">PICK 4</a>
-                </li>
-                <li class="cap pick5nav">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/PICK-5.aspx">PICK 5</a>
-                </li>
-                <li class="wildballNav">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Wild-Ball.aspx">WILD BALL</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Cash4Life.aspx">Cash4Life</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Cash-5.aspx">Cash 5</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Match-6.aspx">Match 6</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Mega-Millions.aspx">Mega Millions</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Powerball.aspx">Powerball</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Treasure-Hunt.aspx">Treasure Hunt</a>
-                </li>
-                <li class="cap">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Millionaire-Raffle.aspx">Millionaire Raffle</a>
-                </li>
-                <li class="list CMSListMenuLI">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Winning-Numbers-History.aspx">Winning Numbers History</a>
-                </li>
-                <li class="list CMSListMenuLI">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Pool-Play.aspx">Pool Play</a>
-                </li>
-                <li class="list CMSListMenuLI">
-                  <a class="list CMSListMenuLink" href="/About-PA-Lottery/How-to-Claim-Your-Prize.aspx">How to Claim Your Prize</a>
-                </li>
-                <li class="list CMSListMenuLI">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Drawing-Chart-Desktop.aspx">Drawing Schedule</a>
-                </li>
-                <li class="list CMSListMenuLI">
-                  <a class="list CMSListMenuLink" href="/Draw-Games/Watch-Drawings.aspx">Watch Drawings</a>
-                </li>
 
-              </ul>
+            <aside class="list-info stretch">
+              <!-- Content of unordered list generated in js/pick2 -->
+              <ul id="subshown" class="list CMSListMenuUL"></ul>
             </aside>
 
             <section class="info-section stretch">
@@ -106,12 +55,12 @@
                 <br />
                 
                 <ul id="game-tabs" class="tabset gamepageoptions">
-                  <li><a href="#winningnumbers" class="active">Winning Numbers</a></li>
-                  <li><a href="#howtoplay">How to Play</a></li>
+                  <li><a id="winning-tab" href="#winningnumbers" class="active">Winning Numbers</a></li>
+                  <li><a id="how-to-tab" href="#howtoplay">How to Play</a></li>
                 </ul>
 
                 <div class="tab-list">
-                  <div class="tab" id="winningnumbers">
+                  <div class="tab show" id="winningnumbers">
 
                     <div class="result-area-large">
                       <div id="DailyDraw">
@@ -178,19 +127,21 @@
                       <p><a href="/About-PA-Lottery/How-to-Claim-Your-Prize.aspx">Read More</a></p>
                     </div>
                   </div>
+
                   <div class="tab" id="howtoplay">
                     <h3><strong>How to Play PICK 2</strong></h3>
 
                     <table border="0" cellpadding="0" cellspacing="0" class="full-width">
                       <tbody class="how-to-play-steps">
                         <tr>
-                          <td class="w-36px"><img alt="1" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/1.gif" /></td>
+                          <td><img alt="1" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/1.gif" /></td>
                           <td>Visit your PA Lottery retailer and pick up a PICK 2 playslip.</td>
                         </tr>
                         <tr>
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>
                         </tr>
+
                         <tr>
                           <td><img alt="2" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/2.gif" /></td>
                           <td>Play up to five panels on your PICK 2 playslip. On each game panel, pick any two-digit number. Or, select the Quick Pick option to have your numbers randomly selected by the computer.<br />
@@ -201,6 +152,7 @@
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>
                         </tr>
+
                         <tr>
                           <td><img alt="3" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/3.gif" /></td>
                           <td>Pick your play type: Straight, Box, Straight/Box, Super Straight, Front Digit, Back Digit. (<a href="/Draw-Games/PICK-2/Prizes-Chances.aspx">Learn more about&nbsp;PICK 2 play types here.</a>)</td>
@@ -209,6 +161,7 @@
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>
                         </tr>
+
                         <tr>
                           <td><img alt="4" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/4.gif" /></td>
                           <td>Choose the drawing(s) you wish to play. You can play day, evening, or both drawings.</td>
@@ -217,6 +170,7 @@
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>
                         </tr>
+
                         <tr>
                           <td><img alt="5" src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/5.gif" /></td>
                           <td>You may play PICK 2 for up to seven draws in advance.</td>
@@ -225,6 +179,7 @@
                           <td>&nbsp;</td>
                           <td>&nbsp;</td>
                         </tr>
+
                         <tr>
                           <td><img alt="Wild Ball" src="https://www.palottery.state.pa.us/PaLotteryWebSite/media/Misc/Logos/wildball_bullet.png" /></td>
                           <td>If desired, select the &#39;NEW&#39; Wild Ball option. To learn more about how it works, <a href="/Draw-Games/Wild-Ball.aspx">click here</a>.</td>
@@ -265,5 +220,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./js/pick2/index.js"></script>
   </body>
 </html>

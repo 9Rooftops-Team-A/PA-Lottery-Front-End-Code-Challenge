@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "server": "http-server ./src/pick-2.html"
+    "server": "http-server ./src/pick2.html"
   },
   "repository": {
     "type": "git",

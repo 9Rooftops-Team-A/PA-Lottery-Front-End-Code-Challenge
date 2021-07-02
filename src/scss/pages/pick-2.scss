@@ -102,7 +102,21 @@
 }
 
 // Placed class on parent due to having 30+ child elements, going for DRY code
-.how-to-play-steps tr td {
-    text-align: left; 
-    vertical-align: top;
+.how-to-play-steps {
+    tr {
+        td {
+            text-align: left; 
+            vertical-align: top;
+        }
+    }
+}
+
+.tab-list {
+    .tab {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
 }
