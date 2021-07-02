@@ -108,6 +108,10 @@
             text-align: left; 
             vertical-align: top;
         }
+
+        td:first-of-type {
+            width: 36px;
+        }
     }
 }
 
