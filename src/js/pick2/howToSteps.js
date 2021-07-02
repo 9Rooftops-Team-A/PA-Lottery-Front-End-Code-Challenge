@@ -5,7 +5,12 @@ const howToSteps = [
     },
     {
         imageURL: "https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/2.gif",
-        text: "Play up to five panels on your PICK 2 playslip. On each game panel, pick any two-digit number. Or, select the Quick Pick option to have your numbers randomly selected by the computer.<br /><a class='launchgameplayslip' href='/Draw-Games/PICK-2/Sample-Playslip.aspx'>View Sample Playslip</a>"
+        text: [
+            "Play up to five panels on your PICK 2 playslip. On each game panel, pick any two-digit number. Or, select the Quick Pick option to have your numbers randomly selected by the computer.",
+            document.createElement("br"),
+            document.createElement("a")
+            // <a class='launchgameplayslip' href='/Draw-Games/PICK-2/Sample-Playslip.aspx'>View Sample Playslip</a>
+        ]
     },
     {
         imageURL: "https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/3.gif",

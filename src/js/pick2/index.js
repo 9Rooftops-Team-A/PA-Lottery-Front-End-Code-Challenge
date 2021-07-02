@@ -124,7 +124,7 @@ const generateStepElement = (step, index) => {
 
     iconImage.alt = `${index}`;
     iconImage.src = step.imageURL;
-    text.innerText = step.text;   
+    text.innerHTML = step.text;   
 
     icon.appendChild(iconImage);
     row.appendChild(icon);

@@ -1,10 +1,11 @@
-/* h2 {
-    font-size: 60px;
-    vertical-align: middle;
-} */
-/* h3 {
-    font-size: 40px;
-} */
+// h2 {
+//     font-size: 60px;
+//     vertical-align: middle;
+// }
+
+// h3 {
+//     font-size: 40px;
+// }
 
 .fluid {
     width: 100%;
@@ -45,9 +46,11 @@
 
 #green_heading {
     color: #2e8069;
-    /*margin-left: 21%;*/
-    margin-top: -5%;
+    margin: 20px 0;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
+    text-transform: none;
 }
 
 #date_range {
@@ -122,5 +125,23 @@
 
     .show {
         display: block;
+    }
+}
+
+.claim-prize-button {
+    background-image: linear-gradient(0deg,#089f60 33%,#42bb89 67%,#7bd7b1 84%);
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 36px;
+    text-align: center;
+
+    border: 1px solid #09a061;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0 2px 2px #646464;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
     }
 }
