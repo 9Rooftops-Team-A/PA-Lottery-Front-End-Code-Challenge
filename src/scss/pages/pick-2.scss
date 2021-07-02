@@ -11,7 +11,7 @@
 #wrapper_2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-stretch: condensed;
-    background-color: #e4eaea;
+    background-color: $wrapper-background-color;
     padding-top: 20px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 #green_heading {
-    color: #2e8069;
+    color: $medium-green;
     margin: 20px 0;
     font-size: 24px;
     line-height: 28px;
@@ -133,7 +133,7 @@
     padding: 8px 36px;
     text-align: center;
 
-    border: 1px solid #09a061;
+    border: 1px solid $lottery-green;
     color: #fff;
     font-weight: 400;
     text-decoration: none;
