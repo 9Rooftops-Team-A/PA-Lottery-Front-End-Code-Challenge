@@ -118,6 +118,18 @@
     }
 }
 
+.info-container {
+    .tabset {
+        display: flex;
+        padding: 0 0 0 1px;
+    
+        li {
+            width: 100%;
+        }
+    }
+}
+
+
 .tab-list {
     .tab {
         display: none;
@@ -141,6 +153,7 @@
     text-decoration: none;
     text-shadow: 0 2px 2px #646464;
     text-transform: uppercase;
+
     &:hover {
         text-decoration: none;
     }
