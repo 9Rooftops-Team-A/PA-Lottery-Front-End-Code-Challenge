@@ -1,3 +1,5 @@
+@import "../helpers/colors";
+
 .fluid {
     width: 100%;
     clear: both;
@@ -113,16 +115,15 @@
             width: 100%;
         }
     }
-}
 
-
-.tab-list {
-    .tab {
-        display: none;
-    }
-
-    .show {
-        display: block;
+    .tab-list {
+        .tab {
+            display: none;
+        }
+    
+        .show {
+            display: block;
+        }
     }
 }
 
@@ -163,5 +164,38 @@
 .local-stations {
     li {
         margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .gamepageoptions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-container {
+        .tab-list {
+            .show {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+           }
+        }
+    }
+
+    .two-columns {
+        flex-direction: column;
+
+        .col {
+            width: 100%;
+        }
+    }
+
+    #DailyDrawDraws {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
