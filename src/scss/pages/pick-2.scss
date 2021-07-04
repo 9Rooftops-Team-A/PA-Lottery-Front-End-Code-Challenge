@@ -34,7 +34,6 @@
 
 #blue_heading {
     color: #25408f;
-    /*margin-left: 7%;*/
     text-align: center;
 }
 
@@ -69,7 +68,7 @@
 
 .btn_blue {
     background-color: #25408f;
-    color: #fff;
+    color: $white;
     font-size: 18px;
     text-decoration: none;
     text-decoration-color: -moz-use-text-color;
@@ -136,7 +135,7 @@
     text-align: center;
 
     border: 1px solid $lottery-green;
-    color: #fff;
+    color: $white;
     font-weight: 400;
     text-decoration: none;
     text-shadow: 0 2px 2px #646464;
@@ -167,7 +166,6 @@
         margin-bottom: 12px;
     }
 }
-
 
 @include tablet-styles {
     .gamepageoptions {

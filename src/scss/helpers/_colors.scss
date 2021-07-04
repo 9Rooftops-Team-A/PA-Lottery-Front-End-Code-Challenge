@@ -1,45 +1,51 @@
-$dark-grey: #343434;
 $green: #008051;
+$medium-green: #02824b;
+$secondary-green: #cdecc1;
+$dark-green: #02663d;
 $darker-green: #226842;
 $darker-green-2: #016d3a;
-$yellow: #f9fda9;
-$grey: #666;
-$lottery-grey: #595959;
+$lottery-green: $green;
 
-$lottery-green: #008051;
-$medium-green: #02824b;
-$dark-green: #02663d;
-$secondary-green: #cdecc1;
+$grey: #666;
+$alt-gray: #707070;
 $light-gray: #f7f7f7;
 $medium-gray: #e6e7e7;
-$dark-gray: #222;
+$dark-grey: #343434;
+$darker-grey: #222;
+$lottery-grey: #595959;
+
+$yellow: #f9fda9;
+
 $red: #ed1c24;
 $alt-red: #DB270B;
 
-$one-site-dark-green: #02663d;
-$one-site-darker-green: #003811;
+$white: #fff;
+$alt-white: #e4eaea;
+
+$one-site-dark-green: $darker-green;
+$one-site-darker-green: $darker-green-2;
 
 // Background colors
 $btn-background-color: $green;
-$btn-background-color-hover: #222;
+$btn-background-color-hover: $dark-grey;
 $btn-alt-background-color: $alt-red;
 $btn-alt-background-color-hover: $dark-grey;
 $hover-overlay-background-color: $yellow;
 $tooltip-color: $green;
-$media-card-background-color: #f7f7f7;
+$media-card-background-color: $light-gray;
 $modal-background-color: $light-gray;
-$wrapper-background-color: #e4eaea;
+$wrapper-background-color: $alt-white;
 
 // Text colors
-$body-text-color: #343434;
+$body-text-color: $dark-grey;
 $link-text-color: $green;
-$btn-text-color: #fff;
+$btn-text-color: $white;
 $heading-color: $green;
-$subheading-color: $dark-gray;
+$subheading-color: $darker-grey;
 $message-text-color: $green;
-$drawing-result-text-color: $dark-gray;
+$drawing-result-text-color: $darker-grey;
 $error-text-color: $red;
-$placeholder-text-color: #707070;
+$placeholder-text-color: $alt-gray;
 
 // Border colors
 $message-border-color: $green;

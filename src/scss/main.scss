@@ -16,7 +16,7 @@
   .list-info {
     float: left;
     width: 208px;
-    border-right: 1px solid #ebebeb;
+    border-right: 1px solid $alt-white;
     padding: 1px 0 0;
 
     .link-section {
@@ -91,7 +91,7 @@
       line-height: 16px;
       font-weight: bold;
       color: #4d4d4d;
-      text-shadow: 0 1px 1px #fff;
+      text-shadow: 0 1px 1px $white;
       background: #acacac;
       border: 1px solid #9a9a9a;
       border-width: 1px 1px 0;
@@ -128,11 +128,7 @@
     overflow: hidden;
   }
 
-  &:after{
-    content: "";
-    display: block;
-    clear: both
-  }
+  &:after { @include after-container }
 }
 
 #page-content {
@@ -174,11 +170,7 @@
     margin: 0 0 29px 10px
   }
 
-  &:after {
-    content: "";
-    display: block;
-    clear: both
-  }
+  &:after { @include after-container }
 }
 
 #DailyDraw {
@@ -213,7 +205,7 @@ span.winning_number,
   border-radius: 28px;
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: $white;
   font-size: 20px;
   font-weight: bold;
   color: #4d4d4d;
@@ -273,7 +265,7 @@ span.winning_number,
 
   span {
     background: #253089;
-    color: #fff;
+    color: $white;
     text-align: center;
     display: inline-block;
     vertical-align: top;
@@ -328,9 +320,9 @@ span.winning_number,
 
 .dailyNumbers {
   clear: both;
-  background-color: #008051;
+  background-color: $lottery-green;
   border-radius: 14px;
-  box-shadow: inset 1px 1px 0 #666;
+  box-shadow: inset 1px 1px 0 $grey;
   margin: 0 auto;
   width: 270px;
 }
@@ -386,7 +378,7 @@ span.winning_number,
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
         min-width: 149px;
-        color: #fff;
+        color: $white;
         text-align: center;
         background: #048251;
         text-decoration: none;
@@ -419,7 +411,7 @@ span.winning_number,
   }
 
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: #fff
+    color: $white
   }
 
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,

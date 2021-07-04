@@ -13,3 +13,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin after-container {
+    content: "";
+    display: block;
+    clear: both
+}
