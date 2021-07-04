@@ -43,7 +43,7 @@
         a {
           display: block;
           padding: 8px 10px 9px;
-          color: #5e5e5e;
+          color: $lottery-grey;
           padding-left: 30px;
           background: none;
           font-size: 14px;
@@ -90,7 +90,7 @@
       font-size: 14px;
       line-height: 16px;
       font-weight: bold;
-      color: #4d4d4d;
+      color: $lottery-grey;
       text-shadow: 0 1px 1px $white;
       background: #acacac;
       border: 1px solid #9a9a9a;
@@ -122,7 +122,7 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     margin: 0 1px 3px;
     padding: 24px 19px;
-    color: #717171;
+    color: $alt-gray;
     font-size: 14px;
     line-height: 18px;
     overflow: hidden;
@@ -164,7 +164,7 @@
   padding: 6px 0 0;
   font-size: 14px;
   line-height: 17px;
-  color: #4d4d4d;
+  color: $lottery-grey;
 
   p {
     margin: 0 0 29px 10px
@@ -208,7 +208,7 @@ span.winning_number,
   background: $white;
   font-size: 20px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: $lottery-grey;
   line-height: 41px;
   background-size: cover;
 }
@@ -264,7 +264,7 @@ span.winning_number,
   }
 
   span {
-    background: #253089;
+    background: $blue;
     color: $white;
     text-align: center;
     display: inline-block;
@@ -285,7 +285,7 @@ span.winning_number,
 }
 
 .dailypayoutlink {
-  color: #0f6742;
+  color: $darkest-green;
   display: block;
   float: right;
   font-weight: bold;
@@ -293,7 +293,7 @@ span.winning_number,
 }
 
 .dailydrawtime {
-  color: #0f6742;
+  color: $darkest-green;
   float: left;
   font-weight: bold;
   text-align: center
@@ -315,7 +315,7 @@ span.winning_number,
 }
 
 .dailydrawtime {
-  color: #363435;
+  color: $dark-grey;
 }
 
 .dailyNumbers {
@@ -411,16 +411,16 @@ span.winning_number,
   }
 
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: $white
+    color: $white;
   }
 
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-    color: #000
+    color: $black;
   }
 
   .info-container .list-info .list .CMSListMenuHighlightedLI a,
   .info-container .list-info .list a:hover {
-    color: #000
+    color: $black;
   }
 }

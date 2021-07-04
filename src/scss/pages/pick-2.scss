@@ -33,7 +33,7 @@
 }
 
 #blue_heading {
-    color: #25408f;
+    color: $blue-header;
     text-align: center;
 }
 
@@ -47,12 +47,12 @@
 }
 
 #date_range {
-    color: #25408f;
+    color: $blue-header;
     text-align: center;
 }
 
 #disclaimer {
-    color: #25408f;
+    color: $blue-header;
     font-weight: 800;
     padding-bottom: 20px;
     text-align: center;
@@ -67,7 +67,7 @@
 }
 
 .btn_blue {
-    background-color: #25408f;
+    background-color: $blue-header;
     color: $white;
     font-size: 18px;
     text-decoration: none;
