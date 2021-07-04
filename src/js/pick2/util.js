@@ -6,7 +6,7 @@ const generateStepElement = (step, index) => {
 
     iconImage.alt = `${index}`;
     iconImage.src = step.imageURL;
-    text.innerText = step.text;   
+    text.innerHTML = step.text;   
 
     icon.appendChild(iconImage);
     row.appendChild(icon);
@@ -34,7 +34,7 @@ const generateHowToSteps = steps => {
         const stepElement = generateStepElement(step, index);
         howToPanel.appendChild(stepElement);
 
-        if(index !== howToSteps.length - 1) {
+        if(index !== steps.length - 1) {
             const spacer = generateStepSpacer();
             howToPanel.appendChild(spacer);
         }    
