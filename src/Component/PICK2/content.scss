@@ -1,0 +1,22 @@
+@import '../../Scss/main.scss';
+
+.content-navigation {
+    margin-top: 50px;;
+}
+
+.contents-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.contents-segment {
+    margin: 20px;
+    padding: 20px;
+}
+
+.contents-navigation-bar {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+  
