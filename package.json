@@ -1,34 +1,40 @@
 {
-  "name": "pa-lottery-front-end-code-challenge",
-  "version": "1.0.0",
-  "description": "Code challenge for the front end developer position at 9Rooftops",
+  "name": "9rooftops",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/9Rooftops-Team-A/PA-Lottery-Front-End-Code-Challenge.git"
-  },
-  "author": "9Rooftops",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/9Rooftops-Team-A/PA-Lottery-Front-End-Code-Challenge/issues"
-  },
-  "homepage": "https://github.com/9Rooftops-Team-A/PA-Lottery-Front-End-Code-Challenge#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "cssnano": "^5.0.6",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "postcss": "^8.3.5",
-    "sass": "^1.35.1"
-  },
   "dependencies": {
-    "http-server": "^0.12.3"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "semantic-ui-react": "^2.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
