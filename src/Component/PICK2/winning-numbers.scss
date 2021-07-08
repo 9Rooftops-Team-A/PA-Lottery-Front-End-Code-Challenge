@@ -1,0 +1,73 @@
+@import '../../Scss/main.scss';
+
+p, li {
+    font-size: 14px;
+    color: $grey;
+}
+
+a {
+    font-size: 14px;
+}
+
+.winning-numbers-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.winning-numbers-inner-container {
+    text-align: center;
+}
+
+.winning-numbers-day {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.winning-numbers-day p{
+    margin: 5px 0;
+}
+
+.winning-number-labels {
+    display: flex;
+    align-items: center;
+    background-color: $one-site-dark-green;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+
+.winning-numbers-information {
+    display: flex;
+    border-top: 1px solid $medium-grey;
+    padding: 30px 0;
+}
+
+.where-to-watch {
+    padding: 10px;
+    color: $grey;
+    max-width: 400px;
+}
+
+.how-to-claim {
+    padding: 20px 10px;
+    color: $grey;
+    max-width: 400px;
+    padding-left: 40px;
+}
+
+.where-to-watch h2, .how-to-claim h2{
+    color: $grey;
+    font-size: large;
+}
+
+.winning-numbers-inner-container h2 {
+    color: $one-site-dark-green;
+}
+
+.ui.blue.label, .ui.blue.labels .label {
+background-color: #2c2d87 !important;
+border-color: #2c2d87 !important;
+font-size: 22px;
+}
