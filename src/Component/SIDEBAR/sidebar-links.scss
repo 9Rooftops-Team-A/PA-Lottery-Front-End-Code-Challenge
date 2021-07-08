@@ -1,0 +1,24 @@
+@import '../../Scss/main.scss';
+
+.sidebar-container {
+    width: 200px;
+    border-right: 2px solid $light-grey;
+}
+
+.sidebar-container p {
+    padding: 5px;
+    margin: 0;
+}
+
+.sidebar-container p a {
+    color: $grey;
+}
+
+.pick-two-sidebar-link {
+    background-color: $light-grey;
+}
+
+.pick-two-sidebar-link p a {
+    background-color: $light-grey;
+    font-weight: bold;
+}
