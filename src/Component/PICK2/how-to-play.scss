@@ -1,0 +1,25 @@
+@import '../../Scss/main.scss';
+
+.how-to-play-container {
+    max-width: 800px;
+}
+
+.how-to-play-container h2{
+    color: $grey;
+    font-size: large;
+}
+
+.how-to-play {
+    display: flex;
+    align-items: flex-start;
+    margin: 12px 0;
+}
+
+.how-to-play p, .how-to-claim-your-prize p {
+    padding-left: 12px;
+}
+
+.how-to-claim-your-prize {
+    text-align: center;
+    padding-bottom: 40px;
+}
