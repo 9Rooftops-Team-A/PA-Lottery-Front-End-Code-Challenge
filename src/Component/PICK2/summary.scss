@@ -1,0 +1,25 @@
+@import '../../Scss/Main.scss';
+
+.summary-container {
+    margin: 20px 40px;
+    max-width: 820px;
+}
+
+.summary-section-one {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.pick-two-intro {
+    padding: 10px;
+}
+
+.watch-draws, .prizes-chances, .winnings {
+    padding: 0 10px;
+}
+
+.watch-draws {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
