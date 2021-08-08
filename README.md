@@ -12,3 +12,10 @@ The code included in this repository is an excerpt from the [Pick 2](https://www
   2. Run `npm i` and `npm start`
   3. Modify and add to the code as you see fit.
   4. Submit a pull request and add [pmcghen](https://github.com/pmcghen) and [jkars9roof](https://github.com/jkars9roof) as reviewers.
+
+## Notes
+
+- To preprocess with Sass locally
+```
+sass --watch main.scss:main.css
+```
