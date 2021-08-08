@@ -16,7 +16,7 @@
   max-width:100%;
   width: 94%;
   margin-bottom: 4vh;
-  margin-left: 18px;
+  margin-left: 18px
 }
 
 .content-area h1 {
@@ -29,6 +29,7 @@
 }
 
 .info-container {
+  margin: 0;
   width: 100%;
   top: -1px;
   padding: 0 0 13px
@@ -41,16 +42,18 @@
   padding: 1px 0 0
 }
 
-.info-container .list-info .link-section {
-  display: none
-}
-
 .info-container .list-info .list {
   list-style: none;
   margin: 0;
-  padding: 10px 0;
-  font-size: 14px;
-  line-height: 16px
+  padding: 10px 0 10px
+}
+
+.info-container .list-info .link-section {
+      display: none
+}
+
+.info-container .expanded .link-section span {
+  background-position: 100% -57px
 }
 
 .info-container .list-info .list li {
@@ -71,6 +74,11 @@
   text-decoration: none
 }
 
+.info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
+.info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
+  color: #000
+}
+
 .info-container:after,
 .container:after {
   content: "";
@@ -78,11 +86,7 @@
   clear: both
 }
 
-@media only screen and (max-width:1019px) {
-  .info-container {
-    margin: 0
-  }
-
+@media only screen and (min-width: 768px) {
   .info-container .list-info {
     width: 170px
   }
@@ -93,66 +97,25 @@
   }
 }
 
-@media only screen and (max-width:767px),
-screen and (device-width: 320px) {
+@media only screen and (min-width: 1020px) {
   .info-container {
-    margin: 0
+    margin: unset
   }
 
   .info-container .list-info .link-section {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 6px 2px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    min-width: 149px;
-    color: #fff;
-    text-align: center;
-    background: #048251;
-    text-decoration: none;
-    box-shadow: 0 1px 1px #999;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 8px
-  }
-
-  .info-container .list-info .link-section span {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 20px 0 0;
-    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px
-  }
-
-  .info-container .expanded .link-section span {
-    background-position: 100% -57px
+    display: block
   }
 
   .info-container .list-info {
-    position: absolute;
-    top: 38px;
-    right: 10px;
-    z-index: 1
+    float: left
   }
 
   .info-container .list-info .list {
-    display: none
-  }
-
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: #fff
-  }
-
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-    color: #000
-  }
-
-  .info-container .list-info .list .CMSListMenuHighlightedLI a,
-  .info-container .list-info .list a:hover {
-    color: #000
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 16px
   }
 }
 
@@ -167,12 +130,14 @@ screen and (device-width: 320px) {
 }
 
 .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
+  color: #fff;
   background: none;
   font-weight: 400
 }
 
 .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
 .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
+  color: #000;
   font-weight: 700;
   background: #e9eaea;
   text-decoration: none
@@ -530,7 +495,7 @@ tr td:first-child {
 	padding-right: 35px
 }
 
-.col:nth-of-type(2) {
+.col:nth-of-type(3) {
   margin:20px 0 15px
 }
 
