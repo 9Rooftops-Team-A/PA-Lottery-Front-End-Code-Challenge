@@ -8,7 +8,8 @@
 }
 
 #page-content p {
-  margin-left: 0
+  margin-left: 0;
+  line-height: 20px
 }
 
 .content-area h1 {
@@ -47,7 +48,7 @@
 
 .info-container .list-info .list li {
   vertical-align: top;
-  padding: 0 0 9px
+  padding: 0
 }
 
 .info-container .list-info .list a {
@@ -125,7 +126,8 @@ screen and (device-width: 320px) {
   .info-container .list-info {
     position: absolute;
     top: 38px;
-    right: 10px
+    right: 10px;
+    z-index: 1
   }
 
   .info-container .list-info .list {
@@ -145,15 +147,6 @@ screen and (device-width: 320px) {
   .info-container .list-info .list a:hover {
     color: #000
   }
-
-  .info-container .list-info {
-    z-index: 1
-  }
-}
-
-.info-container .list-info .list li {
-  vertical-align: top;
-  padding: 0
 }
 
 .info-container .list-info .list ul {
@@ -176,10 +169,6 @@ screen and (device-width: 320px) {
   font-weight: 700;
   background: #e9eaea;
   text-decoration: none
-}
-
-#page-content p {
-  line-height: 20px
 }
 
 #page-content .alignleft {
@@ -250,21 +239,8 @@ screen and (device-width: 320px) {
 #DailyDraw {
   border-bottom: 1px solid #e9e5e6;
   padding-bottom: 20px;
-  min-height: 250px
-}
-
-#DailyDrawDraws h1 {
-  font-size: 24px
-}
-
-#page-content.page-content-games #DailyDrawDraws .circle-list li,
-#page-content.page-content-games #jackpotDraw .circle-list li {
-  background: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif) no-repeat top left;
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 5px;
-  line-height: 400
+  min-height: 250px;
+  text-align: center
 }
 
 .circle-list li.wildball {
@@ -301,18 +277,6 @@ screen and (device-width: 320px) {
   background-size: cover
 }
 
-#page-content.page-content-games #DailyDrawDraws .circle-list li.wildball span {
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 6px;
-  line-height: 400
-}
-
-#DailyDraw {
-  text-align: center
-}
-
 .helper {
   position: relative
 }
@@ -326,7 +290,7 @@ screen and (device-width: 320px) {
 }
 
 .dailydrawtime {
-  color: #0f6742;
+  color: #363435;
   float: left;
   font-weight: 700;
   text-align: center
@@ -359,10 +323,6 @@ screen and (device-width: 320px) {
 
 #page-content.page-content-games #DailyDrawDraws .circle-list li img {
   width: 53px
-}
-
-.dailydrawtime {
-  color: #363435
 }
 
 .dailyNumbers {
