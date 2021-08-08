@@ -12,6 +12,13 @@
   line-height: 20px
 }
 
+.page-content-games a > img {
+  max-width:100%;
+  width: 94%;
+  margin-bottom: 4vh;
+  margin-left: 18px;
+}
+
 .content-area h1 {
   clear: both;
   margin: 0 0 27px;
@@ -289,6 +296,10 @@ screen and (device-width: 320px) {
   text-align: right
 }
 
+.dailypayoutlink span {
+  display: none
+}
+
 .dailydrawtime {
   color: #363435;
   float: left;
@@ -366,12 +377,13 @@ span.winning_number,
 
 #page-content.page-content-games #DailyDrawDraws .circle-list li,
 #page-content.page-content-games #jackpotDraw .circle-list li {
-  background: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif) no-repeat top left;
-  width: 44px;
+  background-image: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif);
+  background-repeat: no-repeat;
+  background-position: top left;  width: 44px;
   height: 38px;
   font-size: 30px;
   padding-top: 5px;
-  line-height: 400
+  line-height: normal
 }
 
 #page-content.page-content-games #DailyDrawDraws .circle-list li.wildball span {
@@ -379,7 +391,7 @@ span.winning_number,
   height: 38px;
   font-size: 30px;
   padding-top: 6px;
-  line-height: 400
+  line-height: normal
 }
 
 .container {
@@ -391,4 +403,139 @@ span.winning_number,
   font-size: 14px;
   line-height: 17px;
   color: #4d4d4d
+}
+
+.fluid {
+  width: 100%;
+  clear: both;
+  display: block
+}
+
+#content {
+  padding-top: 0
+}
+
+#wrapper_2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-stretch: condensed;
+  background-color: #e4eaea;
+  padding-top: 20px
+}
+
+#content_2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%
+}
+
+#c4l_logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  text-align: center;
+  display: block
+}
+
+#blue_heading {
+  color: #25408f;
+  text-align: center
+}
+
+#green_heading {
+  color: #2e8069;
+  margin-top: -5%;
+  text-align: center
+}
+
+#date_range {
+  color: #25408f;
+  text-align: center
+}
+
+#disclaimer {
+  color: #25408f;
+  font-weight: 800;
+  padding-bottom: 20px;
+  text-align: center
+}
+
+#button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px
+}
+
+.btn_blue {
+  background-color: #25408f;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-decoration-color: -moz-use-text-color;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px
+}
+
+.helper > span {
+	display: none
+}
+
+.col > p {
+	color: #717171
+}
+
+.howtoclaim {
+  width: 42%;
+  margin: 20px 0 15px 0
+}
+
+#howtoplay > table {
+	width: 100%
+}
+
+#howtoplay > p {
+	text-align: center
+}
+
+#howtoplay > p:first-of-type {
+  text-align: left
+}
+
+#howtoplay > p > span {
+  font-weight: 700
+}
+
+td {
+  text-align: left;
+  vertical-align: top
+}
+
+tr td:first-child {
+  width: 36px
+}
+
+.link-section.opener {
+	display: none
+}
+
+.linkViewPastWinningNumbers {
+	margin-top: 15px
+}
+
+.col {
+	padding-right: 35px
+}
+
+.col:nth-of-type(2) {
+  margin:20px 0 15px
+}
+
+.img-respond {
+  display: inline-block;
+  max-width: 98%;
+  height: auto
 }
