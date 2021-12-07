@@ -1,35 +1,128 @@
-@import 'helpers/colors';
-@import 'helpers/typography';
-@import 'helpers/global';
+h3 {
+  margin: 0;
+  color: #4d4d4d;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #008051;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+img {
+  border-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-area {
+  padding: 0 10px;
+  position: relative;
+}
+
+@media (min-width: 1020px) {
+  .content-area {
+    padding: 0 29px 0 27px;
+  }
+}
+
+.content-area h1 {
+  margin: 20px 0 12px 10px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #008051;
+}
+
+@media (min-width: 768px) {
+  .content-area h1 {
+    margin: 0 0 27px 0;
+  }
+}
+
+@media (max-width: 1019px) {
+  .content-area .title {
+    margin: 0 0 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-area .title {
+    margin: 0 0 13px 15px;
+  }
+}
+
+.content-area .title-alt {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1020px) {
+  .content-area .title-alt {
+    margin-bottom: 16px;
+  }
+}
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .wrapping-row {
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-@media only screen and(max-width:1023px) {
+@media only screen and (max-width: 1023px) {
   .wrapper {
     width: 100%;
   }
 }
 
 .position-around-flex-item {
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width: 1023px) {
   .top-paragraph-flex {
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
-
 
 #page-content p {
   margin-left: 0;
@@ -40,37 +133,38 @@
   margin: 0 0 27px 0;
   font-size: 20px;
   line-height: 24px;
-  color: $green;
-  text-transform: uppercase
+  color: #008051;
+  text-transform: uppercase;
 }
 
 .info-container {
   width: 100%;
   top: -1px;
   padding: 0 0 13px;
-
-  .list-info {
-    top: 0%;
-    position: sticky;
-    float: left;
-    width: 208px;
-    border-right: 1px solid #ebebeb;
-    padding: 1px 0 0;
-
-    .list {
-      list-style: none;
-      margin: 0;
-      padding: 10px 0 10px;
-      font-size: 14px;
-      line-height: 16px;
-    }
-  }
-  .info-section {
-    overflow: hidden;
-    padding: 0 0 0 27px
-  }
 }
 
+.info-container .list-info {
+  top: 0%;
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  width: 208px;
+  border-right: 1px solid #ebebeb;
+  padding: 1px 0 0;
+}
+
+.info-container .list-info .list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info-container .info-section {
+  overflow: hidden;
+  padding: 0 0 0 27px;
+}
 
 .info-container .list-info .list li {
   vertical-align: top;
@@ -87,36 +181,33 @@
 .info-container .list-info .list a:hover {
   font-weight: bold;
   background: #e9eaea;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .info-container:after,
 .container:after {
   content: "";
   display: block;
-  clear: both
+  clear: both;
 }
 
-@media only screen and (max-width:1019px) {
+@media only screen and (max-width: 1019px) {
   .info-container {
     margin: 0;
-    
-    .list-info {
-      width: 170px
-    }
-    .list {
-      font-size: 12px;
-      line-height: 14px
-    }
+  }
+  .info-container .list-info {
+    width: 170px;
+  }
+  .info-container .list {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
-@media only screen and (max-width:767px),
-screen and (device-width: 320px) {
+@media only screen and (max-width: 767px), screen and (device-width: 320px) {
   .info-container {
-    margin: 0
+    margin: 0;
   }
-
   .info-container .list-info .link-section {
     display: block;
     font-weight: bold;
@@ -130,50 +221,43 @@ screen and (device-width: 320px) {
     text-align: center;
     background: #048251;
     text-decoration: none;
-    box-shadow: 0 1px 1px #999;
+    -webkit-box-shadow: 0 1px 1px #999;
+            box-shadow: 0 1px 1px #999;
     cursor: pointer;
     position: absolute;
     right: 0;
-    bottom: 8px
+    bottom: 8px;
   }
-
   .info-container .list-info .link-section span {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px 0 0;
-    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px
+    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px;
   }
-
   .info-container .expanded .link-section span {
-    background-position: 100% -57px
+    background-position: 100% -57px;
   }
-
   .info-container .list-info {
     position: absolute;
     top: 38px;
-    right: 10px
+    right: 10px;
   }
-
   .info-container .list-info .list {
-    display: none
+    display: none;
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: #fff
+    color: #fff;
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-    color: #000
+    color: #000;
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI a,
   .info-container .list-info .list a:hover {
-    color: #000
+    color: #000;
   }
-
   .info-container .list-info {
-    z-index: 1
+    z-index: 1;
   }
 }
 
@@ -205,35 +289,34 @@ screen and (device-width: 320px) {
 }
 
 #page-content p {
-  line-height: 20px
+  line-height: 20px;
 }
 
 #page-content .alignleft {
   display: block;
   float: left;
-  margin: 0 15px 10px 0
+  margin: 0 15px 10px 0;
 }
 
 .container p {
-  margin: 0 0 29px 10px
+  margin: 0 0 29px 10px;
 }
 
 .info-container .tabset {
   overflow: hidden;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 12px
+  padding: 0 0 0 12px;
 }
 
 .info-container .tabset li {
   float: left;
-  margin: 0 1px 0 0
+  margin: 0 1px 0 0;
 }
 
 #page-content .tabset li {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
-
 
 .info-container .tabset a {
   display: block;
@@ -249,7 +332,8 @@ screen and (device-width: 320px) {
   border: 1px solid #9a9a9a;
   border-width: 1px 1px 0;
   border-color: #646464 #9a9a9a;
-  box-shadow: 0 1px 0 #949494 inset;
+  -webkit-box-shadow: 0 1px 0 #949494 inset;
+          box-shadow: 0 1px 0 #949494 inset;
 }
 
 .info-container .tabset .active,
@@ -257,7 +341,8 @@ screen and (device-width: 320px) {
   text-decoration: none;
   background: #f8f5f5;
   border-color: #646464 #d7d4d4;
-  box-shadow: 0 1px 0 #d5d2d2 inset;
+  -webkit-box-shadow: 0 1px 0 #d5d2d2 inset;
+          box-shadow: 0 1px 0 #d5d2d2 inset;
 }
 
 .info-container .tab-list {
@@ -265,13 +350,14 @@ screen and (device-width: 320px) {
   border: 1px solid #dcdbdb;
   border-width: 0 1px 1px;
   border-color: #878787 #dcdbdb;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   margin: 0 1px 3px;
   padding: 24px 19px;
   color: #717171;
   font-size: 14px;
   line-height: 18px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 #DailyDraw {
@@ -343,7 +429,7 @@ screen and (device-width: 320px) {
 }
 
 #DailyDraw {
-  text-align: center
+  text-align: center;
 }
 
 .helper {
@@ -362,66 +448,66 @@ screen and (device-width: 320px) {
   color: #0f6742;
   float: left;
   font-weight: bold;
-  text-align: center
+  text-align: center;
 }
 
 #DailyDraw img.GameLogo {
   clear: both;
   display: block;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #middayDraw {
   float: left;
   margin-top: 15px;
-
-  width: 294px
+  width: 294px;
 }
 
 #eveningDraw {
   float: left;
   margin-top: 15px;
-
-  width: 294px
+  width: 294px;
 }
 
 #DailyDrawDraws h1 {
   font-size: 24px;
 }
 
-
 .dailydrawtime {
   color: #363435;
 }
 
 .draw-cards {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-weight: 700;
   max-width: 300px;
   width: 100%;
-
-  .dailyNumbers {
-    clear: both;
-    background-color: #008051;
-    border-radius: 14px;
-    -webkit-box-shadow: inset 1px 1px 0 #666;
-    box-shadow: inset 1px 1px 0 #666;
-    margin-bottom: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px 10px;
-  }
 }
 
-
+.draw-cards .dailyNumbers {
+  clear: both;
+  background-color: #008051;
+  border-radius: 14px;
+  -webkit-box-shadow: inset 1px 1px 0 #666;
+  box-shadow: inset 1px 1px 0 #666;
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 10px;
+}
 
 .winning-numbers-history-link-wrap {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .winning-numbers-history-link-wrap {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 10px 0 0;
   }
 }
@@ -430,17 +516,15 @@ screen and (device-width: 320px) {
   width: 49%;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   #page-content .gamepageoptions li {
     width: 99%;
   }
-
   #page-content .gamepageoptions li a {
     font-size: 20px;
     padding: 40px 0;
     width: auto;
   }
-
   .info-container .tabset {
     overflow: hidden;
     list-style: none;
@@ -510,7 +594,7 @@ span.winning_number,
   width: 47%;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   #page-content.page-content-games .col {
     display: inline-block;
     margin: 20px 10px 15px 10px;
@@ -527,10 +611,10 @@ span.winning_number,
   padding: 6px 0 0;
   font-size: 14px;
   line-height: 17px;
-  color: #4d4d4d
+  color: #4d4d4d;
 }
 
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width: 1023px) {
   .container {
     width: 100%;
   }
@@ -555,7 +639,8 @@ span.winning_number,
   font-size: 18px;
   padding: 8px 36px;
   text-align: center;
-  background-image: linear-gradient(to top, rgb(8, 159, 96) 33%, rgb(66, 187, 137) 67%, rgb(123, 215, 177) 84%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(33%, #089f60), color-stop(67%, #42bb89), color-stop(84%, #7bd7b1));
+  background-image: linear-gradient(to top, #089f60 33%, #42bb89 67%, #7bd7b1 84%);
   background-color: #089f60;
   color: white;
   text-transform: uppercase;
@@ -592,7 +677,6 @@ span.winning_number,
   .linkViewPastWinningNumbers {
     font-size: 16px;
     font-weight: 700;
-
   }
 }
 
@@ -602,12 +686,10 @@ span.winning_number,
   right: 3%;
   padding: 2px;
   position: relative;
-
 }
 
 #page-content ol li,
 #page-content ul li {
   margin-bottom: 12px;
 }
-
-
+/*# sourceMappingURL=main.css.map */
