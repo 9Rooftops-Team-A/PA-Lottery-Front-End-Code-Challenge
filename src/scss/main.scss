@@ -2,37 +2,13 @@
 @import 'helpers/typography';
 @import 'helpers/global';
 
-
-.flex {
-  display: flex;
+.info-container .info-section {
+  overflow: hidden;
+  padding: 0 0 0 27px
 }
-
-.wrapping-row {
-  flex-flow: row wrap;
-}
-
-@media only screen and(max-width:1023px) {
-  .wrapper {
-    width: 100%;
-  }
-}
-
-.position-around-flex-item {
-  justify-content: space-around;
-  align-items: center;
-}
-
-@media only screen and (max-width:1023px) {
-  .top-paragraph-flex {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-}
-
-
 
 #page-content p {
-  margin-left: 0;
+  margin-left: 0
 }
 
 .content-area h1 {
@@ -47,40 +23,37 @@
 .info-container {
   width: 100%;
   top: -1px;
-  padding: 0 0 13px;
-
-  .list-info {
-    top: 0%;
-    position: sticky;
-    float: left;
-    width: 208px;
-    border-right: 1px solid #ebebeb;
-    padding: 1px 0 0;
-
-    .list {
-      list-style: none;
-      margin: 0;
-      padding: 10px 0 10px;
-      font-size: 14px;
-      line-height: 16px;
-    }
-  }
-  .info-section {
-    overflow: hidden;
-    padding: 0 0 0 27px
-  }
+  padding: 0 0 13px
 }
 
+.info-container .list-info {
+  float: left;
+  width: 208px;
+  border-right: 1px solid #ebebeb;
+  padding: 1px 0 0
+}
+
+.info-container .list-info .link-section {
+  display: none
+}
+
+.info-container .list-info .list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px;
+  font-size: 14px;
+  line-height: 16px
+}
 
 .info-container .list-info .list li {
   vertical-align: top;
-  padding: 0 0 9px;
+  padding: 0 0 9px
 }
 
 .info-container .list-info .list a {
   display: block;
   padding: 8px 10px 9px;
-  color: #5e5e5e;
+  color: #5e5e5e
 }
 
 .info-container .list-info .list .CMSListMenuHighlightedLI a,
@@ -99,15 +72,15 @@
 
 @media only screen and (max-width:1019px) {
   .info-container {
-    margin: 0;
-    
-    .list-info {
-      width: 170px
-    }
-    .list {
-      font-size: 12px;
-      line-height: 14px
-    }
+    margin: 0
+  }
+
+  .info-container .list-info {
+    width: 170px
+  }
+  .info-container .list-info .list {
+    font-size: 12px;
+    line-height: 14px
   }
 }
 
@@ -136,42 +109,34 @@ screen and (device-width: 320px) {
     right: 0;
     bottom: 8px
   }
-
   .info-container .list-info .link-section span {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px 0 0;
     background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px
   }
-
   .info-container .expanded .link-section span {
     background-position: 100% -57px
   }
-
   .info-container .list-info {
     position: absolute;
     top: 38px;
     right: 10px
   }
-
   .info-container .list-info .list {
     display: none
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
     color: #fff
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
     color: #000
   }
-
   .info-container .list-info .list .CMSListMenuHighlightedLI a,
   .info-container .list-info .list a:hover {
     color: #000
   }
-
   .info-container .list-info {
     z-index: 1
   }
@@ -234,7 +199,6 @@ screen and (device-width: 320px) {
   margin-bottom: 0
 }
 
-
 .info-container .tabset a {
   display: block;
   text-align: center;
@@ -295,7 +259,6 @@ screen and (device-width: 320px) {
   font-size: 30px;
   padding-top: 5px;
   line-height: normal;
-  margin-bottom: 0;
 }
 
 .circle-list li.wildball {
@@ -311,11 +274,9 @@ screen and (device-width: 320px) {
 
 .circle-list li.wildball img {
   display: inline-block;
-  margin-top: 1px;
-  margin-right: 10px;
-  width: 42%;
-  padding: 2px;
-  position: relative;
+  margin-top: -3px;
+  margin-right: 8px;
+  width: 50px;
 }
 
 .circle-list li.wildball span {
@@ -373,15 +334,16 @@ screen and (device-width: 320px) {
 
 #middayDraw {
   float: left;
+  margin-right: 30px;
   margin-top: 15px;
-
+  margin-bottom: 50px;
   width: 294px
 }
 
 #eveningDraw {
   float: left;
   margin-top: 15px;
-
+  margin-bottom: 50px;
   width: 294px
 }
 
@@ -389,64 +351,21 @@ screen and (device-width: 320px) {
   font-size: 24px;
 }
 
+#page-content.page-content-games #DailyDrawDraws .circle-list li img {
+  width: 53px;
+}
 
 .dailydrawtime {
   color: #363435;
 }
 
-.draw-cards {
-  align-self: flex-start;
-  font-weight: 700;
-  max-width: 300px;
-  width: 100%;
-
-  .dailyNumbers {
-    clear: both;
-    background-color: #008051;
-    border-radius: 14px;
-    -webkit-box-shadow: inset 1px 1px 0 #666;
-    box-shadow: inset 1px 1px 0 #666;
-    margin-bottom: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px 10px;
-  }
-}
-
-
-
-.winning-numbers-history-link-wrap {
-  justify-content: flex-end;
-}
-
-@media only screen and (max-width:767px) {
-  .winning-numbers-history-link-wrap {
-    justify-content: flex-start;
-    padding: 10px 0 0;
-  }
-}
-
-#page-content .gamepageoptions li {
-  width: 49%;
-}
-
-@media only screen and (max-width:767px) {
-  #page-content .gamepageoptions li {
-    width: 99%;
-  }
-
-  #page-content .gamepageoptions li a {
-    font-size: 20px;
-    padding: 40px 0;
-    width: auto;
-  }
-
-  .info-container .tabset {
-    overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 1px;
-  }
+.dailyNumbers {
+  clear: both;
+  background-color: #008051;
+  border-radius: 14px;
+  box-shadow: inset 1px 1px 0 #666;
+  margin: 0 auto;
+  width: 270px;
 }
 
 .circle-list {
@@ -500,25 +419,6 @@ span.winning_number,
   line-height: normal;
 }
 
-.col:nth-of-type(1) {
-  padding-right: 35px;
-}
-
-#page-content.page-content-games .col {
-  display: inline-block;
-  vertical-align: top;
-  width: 47%;
-}
-
-@media only screen and (max-width:767px) {
-  #page-content.page-content-games .col {
-    display: inline-block;
-    margin: 20px 10px 15px 10px;
-    vertical-align: top;
-    width: 98%;
-  }
-}
-
 .container {
   height: 1%;
   position: relative;
@@ -529,85 +429,3 @@ span.winning_number,
   line-height: 17px;
   color: #4d4d4d
 }
-
-@media only screen and (max-width:1023px) {
-  .container {
-    width: 100%;
-  }
-}
-
-#howtoplay {
-  display: none;
-}
-
-.how-to-play-header {
-  position: relative;
-  text-align: center;
-  font-size: 24px;
-  line-height: 28px;
-  color: #008051;
-  margin: 0 0 22px;
-  text-transform: none;
-}
-
-#page-content.page-content-games .button-small {
-  display: inline-block;
-  font-size: 18px;
-  padding: 8px 36px;
-  text-align: center;
-  background-image: linear-gradient(to top, rgb(8, 159, 96) 33%, rgb(66, 187, 137) 67%, rgb(123, 215, 177) 84%);
-  background-color: #089f60;
-  color: white;
-  text-transform: uppercase;
-}
-
-.td-style-left-top:nth-of-type(1) {
-  width: 36px;
-}
-
-.td-style-left-top {
-  text-align: left;
-  vertical-align: top;
-}
-
-.hide-content {
-  display: none;
-}
-
-@media only screen and (max-width: 767px) {
-  .container p:not(.detail) {
-    font-size: 18px;
-    line-height: 26px;
-    margin-left: 15px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .content-area h1 {
-    margin: 34px 0 27px 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .linkViewPastWinningNumbers {
-    font-size: 16px;
-    font-weight: 700;
-
-  }
-}
-
-.wild-ball-img {
-  width: 42%;
-  top: 7%;
-  right: 3%;
-  padding: 2px;
-  position: relative;
-
-}
-
-#page-content ol li,
-#page-content ul li {
-  margin-bottom: 12px;
-}
-
-
