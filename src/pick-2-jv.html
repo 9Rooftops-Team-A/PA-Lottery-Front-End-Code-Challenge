@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>
       Pennsylvania Lottery - PICK 2 - Draw Games &amp; Results
     </title>
@@ -94,8 +97,8 @@
   </head>
   <body>
     <main id="content" class="wrapper">
-      <div class="content-area" style="border: #ff0000 1px solid;">
-        <div class="container newcontainer" style="display: block; width: 100%; margin: auto auto; border: #000 1px solid;">
+      <div class="content-area"><!-- style="border: #ff0000 1px solid;" -->
+        <div class="container newcontainer" style="display: block; width: 100%; margin: auto auto;">
           <h1>PICK 2</h1>
           <div class="info-container">
             
@@ -158,48 +161,239 @@
               </ul>
             </aside>
 
-            
-
-            <section class="info-section stretch" style="border: #ff0 1px solid;">
+            <section class="info-section stretch" style="display: flex;">
              <!-- inner -->
              <div id="page-content" class="page-content-games">
-              <div id="p_lt_zoneMain_pageplaceholder1_p_lt_zoneContent_BannerViewer_viewElem" style="border: #000 1px solid;">
+              <div id="p_lt_zoneMain_pageplaceholder1_p_lt_zoneContent_BannerViewer_viewElem">
               </div>
-              <div><a href="https://pa.secondchancebonuszone.com/sunnymoney2021/home#promotop"><img style="max-width:100%;width: 94%; margin-bottom: 4vh; margin-left: 18px;" src="https://www.palottery.state.pa.us/PaLotteryWebSite/media/Games-Section/Banners/Sunny-Money_SCD_800x110-ActiveGames.jpg?ext=.jpg" alt="Sunny Money SCD" /></a></div>
-              <p><img alt="PICK 2" class="alignleft" src="http://www.palottery.state.pa.us/getattachment/Games/PICK-2/pick-2.png.aspx" />Have fun every day with PICK 2, one of the PA Lottery games with great prizes and chances of winning! You can try to match the winning Lottery numbers twice a day by playing PICK 2 day and PICK 2 evening, and it&rsquo;s really easy. Now, play PICK 2 with <a href="/Draw-Games/Wild-Ball.aspx">Wild Ball</a>.<br />
-                &nbsp;</p>
-              <p><a href="/Draw-Games/PICK-2/Prizes-Chances.aspx">Prizes &amp;&nbsp;Chances</a>&nbsp;|&nbsp;<a href="/Draw-Games/Watch-Drawings.aspx">Watch Drawings</a>&nbsp;| <a href="/Draw-Games/Winning-Numbers-History.aspx">Winning Numbers History</a></p>
+              <div><a href="https://pa.secondchancebonuszone.com/sunnymoney2021/home#promotop"><img style="max-width:100%;width: 94%; margin-bottom: 4vh; margin-left: 18px;" src="https://www.palottery.state.pa.us/PaLotteryWebSite/media/Games-Section/Banners/North-Pole-Payout_SCD_Draw_800x110-ActiveGames.jpg" alt="Sunny Money SCD" /></a></div>
+              <div class="pick2container">
+                
+                <div class="pick2col1"><img alt="PICK 2" class="alignleft" src="http://www.palottery.state.pa.us/getattachment/Games/PICK-2/pick-2.png" />
+                </div>
+                <div class="pick2col2">
+                  <p>Have fun every day with PICK 2, one of the PA Lottery games with great prizes and chances of winning! 
+                    You can try to match the winning Lottery numbers twice a day by playing PICK 2 day and PICK 2 evening, and 
+                    it&rsquo;s really easy. Now, play PICK 2 with <a href="/Draw-Games/Wild-Ball.aspx">Wild Ball</a>.<br><br>
+<a href="/Draw-Games/PICK-2/Prizes-Chances.aspx">Prizes &amp;&nbsp;Chances</a>&nbsp;|&nbsp;<a href="/Draw-Games/Watch-Drawings.aspx">Watch Drawings</a>&nbsp;| <a href="/Draw-Games/Winning-Numbers-History.aspx">Winning Numbers History</a>
+                </p></div>
+              </div><!-- pick2container -->
+
+              <p></p>
               <br />
-              <style type="text/css">
+              
+             <!-- <style type="text/css">
                 .img-respond {
                   display: inline-block;
                   max-width: 98%;
                   height: auto;
                 }
           
-              </style>
+              </style> -->
           
+              <!--
               <ul id="game-tabs" class="tabset gamepageoptions">
-                <li><a href="#winningnumbers" class="active">Winning Numbers</a></li>
-                <li><a href="#howtoplay">How to Play</a></li>
+                <li><a href="#/" class="active">Winning Numbers</a></li>
+                <li><a href="#/">How to Play</a></li>
               </ul>
-          
+              -->
+
               <div class="newtablist">
-          dcsdcsdcsd
+               <div id="winningnumbersbtn" class="winningnumbersbtn btns">
+                  <a href="#winningnumbers"><h2>Winning Numbers</h2></a>
+                </div>
+               <div id="howtoplaybtn" class="howtoplaybtn btns">
+                  <a href="#howtoplay"><h2>How to Play</h2></a>
+               </div>
               </div><!-- newtablist -->
           
-              <div class="tab-list" style="border: #000 1px solid;">
+              <div class="tab-list">
           
-                <div class="winnercontainer">
-                    <div class="box1">
-                      <h1>DAY</h1>
-                    </div><!-- box1 -->
-                    <div class="box2">
-                      <h1>EVENING</h1>
-                    </div><!-- box1 -->
+                <div id="winningnumberscontainer" class="tabcontainer">
+                    
+                      <div class="row">
+                        <div> <select>
+                          <option value="12/12/2021">Today</option>
+                          <option value="12/11/2021">12/11/2021</option>
+                          <option value="12/10/2021">12/10/2021</option>
+                          <option value="12/09/2021">12/09/2021</option>
+                          <option value="12/08/2021">12/08/2021</option>
+                          <option value="12/07/2021">12/07/2021</option>
+                          <option value="12/06/2021">12/06/2021</option>
+                          <option value="12/05/2021">12/05/2021</option>
+                          <option value="12/04/2021">12/04/2021</option>
+                          <option value="12/03/2021">12/03/2021</option>
+                          <option value="12/02/2021">12/02/2021</option>
+                          <option value="12/01/2021">12/01/2021</option>
+                          <option value="11/30/2021">11/30/2021</option>
+                          <option value="11/29/2021">11/29/2021</option>
+                          <option value="11/28/2021">11/28/2021</option>
+                          <option value="11/27/2021">11/27/2021</option>
+                          <option value="11/26/2021">11/26/2021</option>
+                          <option value="11/25/2021">11/25/2021</option>
+                          <option value="11/24/2021">11/24/2021</option>
+                          <option value="11/23/2021">11/23/2021</option>
+                          <option value="11/22/2021">11/22/2021</option>
+                          <option value="11/21/2021">11/21/2021</option>
+                          <option value="11/20/2021">11/20/2021</option>
+                          <option value="11/19/2021">11/19/2021</option>
+                          <option value="11/18/2021">11/18/2021</option>
+                          <option value="11/17/2021">11/17/2021</option>
+                          <option value="11/16/2021">11/16/2021</option>
+                          <option value="11/15/2021">11/15/2021</option>
+                          <option value="11/14/2021">11/14/2021</option>
+                          <option value="11/13/2021">11/13/2021</option>
+                        </select></div>
+
+                      </div>
+
+                      <div class="row">
+
+
+                      <div class="box">
+                        
+                      
+
+                        <h1>DAY</h1>
+                      <div class="dayevening">
+                    <div class="date">DEC. 12, 2021</div>
+       <div class="payout">PAYOUT &raquo;</div>
+                    </div>
+                        <div class="greenbox">
+                          <div class="greenbox-row">
+                            <div class="circle white">3</div>
+                            <div class="circle white">2</div>
+                          </div> 
+                          <div class="greenbox-row">
+                            <div class="circle blue">2</div>
+                            <div class="circle blue">5</div>
+                          </div> 
+                        </div><!-- greenbox -->
+                      </div><!-- box1 -->
+
+                      <div class="box">
+                        <h1>EVENING</h1>
+                        <div class="dayevening">
+                          <div class="date">DEC. 12, 2021</div>
+             <div class="payout">PAYOUT &raquo;</div>
+                          </div>
+                        <div class="greenbox">
+                            <div class="greenbox-row">
+                              <div class="circle white">2</div>
+                              <div class="circle white">3</div>
+                            </div> 
+                            <div class="greenbox-row">
+                              <div class="circle blue">3</div>
+                              <div class="circle blue">5</div>
+                            </div> 
+                            
+                        </div><!-- greenbox -->
+                      </div><!-- box1 -->
+
+                    </div><!-- row -->
+
+                    <div class="row howto">
+                      <h2 class="green">HAS MY NUMBER EVER WON
+                        PICK 2</h2>
+  <br>
+<p>Add to the fun of picking PA Lottery numbers by checking to see if the 
+  numbers you picked have ever been winning Lottery numbers! Just enter your 
+  Lottery numbers in the boxes below. After hitting the red SEARCH button, 
+  scroll down to see your results.</p>
+  
+                    </div><!-- row -->
+
+                    <div class="row">
+
+                      <div class="box instructions">
+                        <h1>WHERE TO WATCH</h1>
+                        <p>
+                          PICK 2 day drawing can be viewed on the PA Lottery website daily after 1:35 p.m.
+                          <br>
+                          PICK 2 evening is drawn during the nightly drawing show at 6:59 p.m. Watch for the 
+                          evening drawing on TV, streaming online or check PA Lottery drawing results on your
+                           local TV station:
+                        </p>
+
+                        <ul>
+                          <li>Erie: WJET Ch. 24</li>
+                          <li>Harrisburg/Lancaster/York: WGAL Ch. 8</li>
+                          <li>Johnstown/Altoona/State College: WTAJ Ch. 10</li>
+                          <li>Philadelphia: WTXF Ch. 29</li>
+                          <li>Pittsburgh: WPXI Ch. 11</li>
+                          <li>Wilkes-Barre/Scranton: WNEP Ch. 16</li>
+                        </ul>
+
+                        <p>
+                          View drawing times for all games: PA Lottery Drawing Schedule
+                        </p>
+                        <br><br>
+
+                      </div><!-- box1 -->
+
+                      <div class="box instructions">
+                        <h1>HOW TO CLAIM</h1>
+                        <p>
+                          After winning the lottery the first step is completing the back of your ticket, 
+                          including your name, address, phone number and signature. Remember, each lottery 
+                          ticket is a bearer document, meaning it is legally owned by whomever possesses it, 
+                          at least until it is signed.
+                          <br><br>
+                          Read more
+                        </p>
+                      </div><!-- box1 -->
+
+                    </div><!-- row -->
+          
+
                 </div><!-- winnercontainer-->
+
+                <div id="howtoplaycontainer" class="tabcontainer">
+                  
+                  <div class="row">
+
+                    <div class="box howto">
+
+                      <img src="https://www.palottery.state.pa.us/getattachment/Games/PICK-2/PICK2_WatchIt_03.jpg" style="border: #d3d3d3 1px solid;" />
+                      <br><br>
+                      <h1>WATCH IT</h1>
+
+                    </div><!-- box1 -->
+
+                    <div class="box howto">
+                      
+                      <img src="https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/Try-It-PICK2.jpg" style="border: #d3d3d3 1px solid;" />
+                      <br><br>
+                      <h1>TRY IT</h1>
+
+                    </div><!-- box1 -->
+
+                  </div><!-- row -->
+
+                  <div class="row howto">
+                    <h2 class="green">How to Play PICK 2</h2>
+
+                    <ul>
+                      <li class="one">Visit your PA Lottery retailer and pick up a PICK 2 playslip.<br>&nbsp;</li>
+                      <li class="two">Play up to five panels on your PICK 2 playslip. On each game panel, pick any two-digit number. Or, select the Quick Pick option to have your numbers randomly selected by the computer.
+                      <br>View Sample Playslip<br>&nbsp;</li>
+                      <li class="three">Pick your play type: Straight, Box, Straight/Box, Super Straight, Front Digit, Back Digit. (Learn more about PICK 2 play types here.)<br>&nbsp;</li>
+                      <li class="four">Choose the drawing(s) you wish to play. You can play day, evening, or both drawings.<br>&nbsp;</li>
+                      <li class="five">You may play PICK 2 for up to seven draws in advance.<br>&nbsp;</li>
+                      <li class="six">If desired, select the 'NEW' Wild Ball option. To learn more about how it works, click here.<br>&nbsp;</li>
+                      <li class="seven">Be sure to check your PICK 2 ticket to verify that the information is correct and legible.<br>
+                        View Sample Ticket<br>&nbsp;</li>
+                      <li class="eight">Play up to five panels on your PICK 2 playslip. On each game panel, pick any two-digit number. Or, select the Quick Pick option to have your numbers randomly selected by the computer.
+                      <br>Look for PA Lottery results: You can check PICK 2 Lottery results by watching the PICK 2 day drawing on the PA Lottery website daily after 1:35 p.m., watching the PICK 2 evening drawing nightly at 6:59 p.m. on TV or streaming online, checking our website and official mobile app, and subscribing to Lottery RSS feeds. You can also visit the Lottery VIP Players Club to sign up for emails and text messages to receive winning Lottery number alerts for PICK 2 and other PA Lottery games.</li>
+                    </ul>
+
+                  </div><!-- row -->
+
+                </div><!-- howtoplaycontainer-->
+
+               
           
-                <div class="tab" id="winningnumbers" style="border: #000 1px solid;">
+                <div class="tab" id="winningnumbers" style="display: none; border: #000 1px solid;">
                   
                   <div class="result-area-large">
                     <div id="DailyDraw">
@@ -268,7 +462,9 @@
                     <p><a href="/About-PA-Lottery/How-to-Claim-Your-Prize.aspx">Read More</a></p>
                   </div>
                 </div><!-- winning numbers -->
-                <div class="tab" id="howtoplay" style="border: #ff0000 1px solid;">
+
+
+                <div class="tab" id="howtoplay" style="border: #ff0000 1px solid; display: none;">
                   <h3><strong>How to Play PICK 2</strong></h3>
           
                   <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
@@ -357,5 +553,58 @@
         </div><!-- container-->
       </div>
     </main>
+
+    <script>
+
+    //load current tab on refresh
+    window.addEventListener('load', (event) => {
+
+    //identify default and declare clicked tabs
+    const currentHash = location.hash;
+    const getHash = currentHash.substr(1);
+    const currentDisplay = getHash + 'container';
+    const currentTab = getHash + 'btn';
+
+    //console.log(currentDisplay);
+
+    //default tab and content
+    const defaultTab = document.getElementById('winningnumbersbtn');
+    const defaultDisplay = document.getElementById('winningnumberscontainer');
+
+    //clicked tab
+    const addActive = document.getElementById(currentTab);
+    const displayCurrent = document.getElementById(currentDisplay);
+
+    //display 
+    let currentTabContent = currentHash === '' ? 
+    (defaultTab.classList.add('active'), defaultDisplay.style.display = 'block') : (addActive.classList.add('active'), displayCurrent.style.display = 'block');
+
+    });
+
+    //Tab functionality
+    const btns = document.querySelectorAll('.btns');
+    const tabsContents = document.querySelectorAll('.tabcontainer');
+   
+    //display content
+    function displayTabContent(current) {
+      for (let i = 0; i < tabsContents.length; i++) {
+        tabsContents[i].style.display = (current === i) ? 'block' : 'none';
+      }
+    }
+    
+    //active tab class
+    for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', function() {
+            
+            let current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace(' active');
+            this.className += ' active';
+
+            displayTabContent(i);
+
+            })
+    }
+
+    </script>
   </body>
-</html>
+</html>`
