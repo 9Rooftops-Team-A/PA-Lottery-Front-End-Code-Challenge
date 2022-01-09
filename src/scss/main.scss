@@ -2,13 +2,20 @@
 @import 'helpers/typography';
 @import 'helpers/global';
 
+@mixin box-border-box {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
 .info-container .info-section {
   overflow: hidden;
-  padding: 0 0 0 27px
+  padding: 0 0 0 27px;
 }
 
 #page-content p {
-  margin-left: 0
+  margin-left: 0;
 }
 
 .content-area h1 {
@@ -17,24 +24,24 @@
   font-size: 20px;
   line-height: 24px;
   color: $green;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .info-container {
   width: 100%;
   top: -1px;
-  padding: 0 0 13px
+  padding: 0 0 13px;
 }
 
 .info-container .list-info {
   float: left;
   width: 208px;
   border-right: 1px solid #ebebeb;
-  padding: 1px 0 0
+  padding: 1px 0 0;
 }
 
 .info-container .list-info .link-section {
-  display: none
+  display: none;
 }
 
 .info-container .list-info .list {
@@ -42,37 +49,37 @@
   margin: 0;
   padding: 10px 0 10px;
   font-size: 14px;
-  line-height: 16px
+  line-height: 16px;
 }
 
 .info-container .list-info .list li {
   vertical-align: top;
-  padding: 0 0 9px
+  padding: 0 0 9px;
 }
 
 .info-container .list-info .list a {
   display: block;
   padding: 8px 10px 9px;
-  color: #5e5e5e
+  color: #5e5e5e;
 }
 
 .info-container .list-info .list .CMSListMenuHighlightedLI a,
 .info-container .list-info .list a:hover {
   font-weight: bold;
   background: #e9eaea;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .info-container:after,
 .container:after {
   content: "";
   display: block;
-  clear: both
+  clear: both;
 }
 
 @media only screen and (max-width:1019px) {
   .info-container {
-    margin: 0
+    margin: 0;
   }
 
   .info-container .list-info {
@@ -80,14 +87,14 @@
   }
   .info-container .list-info .list {
     font-size: 12px;
-    line-height: 14px
+    line-height: 14px;
   }
 }
 
 @media only screen and (max-width:767px),
 screen and (device-width: 320px) {
   .info-container {
-    margin: 0
+    margin: 0;
   }
 
   .info-container .list-info .link-section {
@@ -107,38 +114,38 @@ screen and (device-width: 320px) {
     cursor: pointer;
     position: absolute;
     right: 0;
-    bottom: 8px
+    bottom: 8px;
   }
   .info-container .list-info .link-section span {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px 0 0;
-    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px
+    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px;
   }
   .info-container .expanded .link-section span {
-    background-position: 100% -57px
+    background-position: 100% -57px;
   }
   .info-container .list-info {
     position: absolute;
     top: 38px;
-    right: 10px
+    right: 10px;
   }
   .info-container .list-info .list {
-    display: none
+    display: none;
   }
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: #fff
+    color: #fff;
   }
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
   .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-    color: #000
+    color: #000;
   }
   .info-container .list-info .list .CMSListMenuHighlightedLI a,
   .info-container .list-info .list a:hover {
-    color: #000
+    color: #000;
   }
   .info-container .list-info {
-    z-index: 1
+    z-index: 1;
   }
 }
 
@@ -170,33 +177,33 @@ screen and (device-width: 320px) {
 }
 
 #page-content p {
-  line-height: 20px
+  line-height: 20px;
 }
 
 #page-content .alignleft {
   display: block;
   float: left;
-  margin: 0 15px 10px 0
+  margin: 0 15px 10px 0;
 }
 
 .container p {
-  margin: 0 0 29px 10px
+  margin: 0 0 29px 10px;
 }
 
 .info-container .tabset {
   overflow: hidden;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 12px
+  padding: 0 0 0 12px;
 }
 
 .info-container .tabset li {
   float: left;
-  margin: 0 1px 0 0
+  margin: 0 1px 0 0;
 }
 
 #page-content .tabset li {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .info-container .tabset a {
@@ -235,7 +242,7 @@ screen and (device-width: 320px) {
   color: #717171;
   font-size: 14px;
   line-height: 18px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 #DailyDraw {
@@ -304,7 +311,7 @@ screen and (device-width: 320px) {
 }
 
 #DailyDraw {
-  text-align: center
+  text-align: center;
 }
 
 .helper {
@@ -323,28 +330,21 @@ screen and (device-width: 320px) {
   color: #0f6742;
   float: left;
   font-weight: bold;
-  text-align: center
+  text-align: center;
 }
 
 #DailyDraw img.GameLogo {
   clear: both;
   display: block;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
+#eveningDraw,
 #middayDraw {
   float: left;
-  margin-right: 30px;
-  margin-top: 15px;
-  margin-bottom: 50px;
-  width: 294px
-}
-
-#eveningDraw {
-  float: left;
-  margin-top: 15px;
-  margin-bottom: 50px;
-  width: 294px
+  margin:15px 0 50px 0;
+  padding:0 2.5%;
+  width: 45%;
 }
 
 #DailyDrawDraws h1 {
@@ -365,13 +365,12 @@ screen and (device-width: 320px) {
   border-radius: 14px;
   box-shadow: inset 1px 1px 0 #666;
   margin: 0 auto;
-  width: 270px;
 }
 
 .circle-list {
   list-style: none;
   margin: 0;
-  padding: 3px 0 5px;
+  padding: 15px 0 5px;
   overflow: hidden;
   text-align: center;
   display: inline-block;
@@ -423,9 +422,153 @@ span.winning_number,
   height: 1%;
   position: relative;
   margin: 0 -7px;
-  width: 962px;
+  max-width: 962px;
   padding: 6px 0 0;
   font-size: 14px;
   line-height: 17px;
-  color: #4d4d4d
+  color: #4d4d4d;
+}
+
+/* NEW JN 2022-01-10 */
+
+.game-intro {
+  margin:0 0 50px 0;
+
+  p {
+    margin:0 0 35px 0;
+  }
+
+  *:last-child {
+    margin-bottom:0;
+  }
+
+}
+
+.tab-list {
+
+  h2 {
+    color:$green;
+    margin:0 0 25px 0;
+  }
+
+}
+
+.tab-td-lefttop {
+  text-align: left;
+  vertical-align: top;
+}
+
+.tab-columns {
+  display:flex;
+  align-items:baseline;
+  padding:5% 0 0 0;
+
+  .col {
+    @include box-border-box;
+    width:50%;
+  }
+
+  .col:first-child {
+    padding-right:3%;
+  }
+
+  .col:last-child {
+    padding-left:3%;
+  }
+
+}
+
+.tab {
+  padding:15px 0 0 0;
+}
+
+.results-past-numbers {
+  width:auto;
+  clear:both;
+  padding:0 0 10px 0;
+  float:none;
+  display:block;
+}
+
+.tab-cta a {
+  display:inline-block;
+  color:#FFFFFF;
+  background-color:$btn-background-color;
+  padding:15px 35px;
+  border-radius:5px;
+  transition:.3s;
+  font-weight:700;
+  font-size:1.1em;
+
+  &:hover {
+    background-color:$btn-background-color-hover;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .game-intro {
+    margin:0 0 50px 0;
+
+    p {
+      margin:0 0 25px 0;
+      font-size:1.2em;
+      text-align:center;
+    }
+
+    #MainPageLogo {
+      display: block;
+      float: none;
+      margin: 0 auto 10px auto;
+    }
+
+  }
+
+  .info-container .tabset {
+    padding: 0;
+  }
+
+  .info-container .tabset li {
+    float: none;
+    margin: 0;
+  }
+
+  .info-container .tabset a {
+    min-width: none;
+    padding: 35px 15px;
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  #eveningDraw,
+  #middayDraw {
+    float: none;
+    margin:0 auto 25px auto;
+    padding:0;
+    max-width:300px;
+    width:auto;
+  }
+
+  #middayDraw {
+    margin-bottom:50px;
+  }
+
+  .tab-columns {
+
+    flex-wrap:wrap;
+
+    .col {
+      width:100%;
+    }
+    .col:first-child {
+      padding:0 0 3% 0;
+    }
+    .col:last-child {
+      padding:0;
+    }
+
+  }
 }
