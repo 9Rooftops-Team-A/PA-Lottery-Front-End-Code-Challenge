@@ -1,29 +1,38 @@
 var paltabs = (function($){
 	"use strict";
 
-	$('.tab:gt(0)').css('display', 'none');
+	//Remove tabActive status from all tabs but the first content tab
+	$('.tab:gt(0)').removeClass('tabActive');
 
+	//Main Tab Transition
 	$('#game-tabs li a').on('click', function(e){
 		e.preventDefault();
-		let tabSelected = $(this).attr('href');
+		let tabSelected = $(this);
+		let tabHref = $(this).attr('href');
 
-		//Toggle Tab Active Status
-		$('#game-tabs li a:not(' + tabSelected + ')').removeClass('active');
-		$(this).addClass('active');
+		if($(tabSelected).hasClass('active')) {
+			slideToLoc(tabHref);
+		}
+		else {
+			//Toggle Tab Active Status from Tab Menu
+			$('#game-tabs li a').not(tabSelected).removeClass('active');
+			$(tabSelected).addClass('active');
 
-		//Toggle Tab Content Display
-		$('.tab:not(' + tabSelected + ')').css('display', 'none');
-		$(tabSelected).css('display', 'block');
+			//Toggle Tab Content Display
+			$('.tab:not(' + tabHref + ')').removeClass('tabActive');
+			$(tabHref).addClass('tabActive');
+		}
 	});
 
-	//FUNCTIONS
-	function alertMe() {
-		alert('Found');
+	//UTILITY FUNCTIONS
+	function slideToLoc(sectionId){
+		let theAnchor = $(sectionId).offset();
+		$('html, body').animate({scrollTop:theAnchor.top}, 500);
 	}
 
 	//RETURNS
 	return {
-		alertMe : alertMe
+		slideToLoc : slideToLoc
 	};
 
 }
