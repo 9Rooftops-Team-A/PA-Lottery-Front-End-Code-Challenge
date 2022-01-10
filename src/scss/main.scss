@@ -264,6 +264,11 @@ screen and (device-width: 320px) {
   overflow: hidden;
 }
 
+.info-container .tab-list p,
+.info-container .tab-list ul {
+  margin-bottom:25px;
+}
+
 #DailyDraw {
   border-bottom: 1px solid #e9e5e6;
   padding-bottom: 20px;
@@ -441,11 +446,9 @@ span.winning_number,
   *:last-child {
     margin-bottom:0;
   }
-
 }
 
 .tab-list {
-
   h2 {
     color:$green;
     margin:0 0 25px 0;
@@ -473,6 +476,26 @@ span.winning_number,
 
 .tab {
   padding:15px 0 0 0;
+  opacity:0;
+  transition:.3s;
+  display:none;
+  animation: tabsFadeOut 1s;
+
+  &.tabActive {
+    opacity:1;
+    display:block;
+    animation: tabsFadeIn 1s;
+  }
+}
+
+@keyframes tabsFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes tabsFadeOut {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .results-past-numbers {
