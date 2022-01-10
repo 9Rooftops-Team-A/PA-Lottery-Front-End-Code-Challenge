@@ -9,11 +9,6 @@
   box-sizing:border-box;
 }
 
-.info-container .info-section {
-  overflow: hidden;
-  padding: 0 0 0 27px;
-}
-
 #page-content p {
   margin-left: 0;
 }
@@ -31,46 +26,61 @@
   width: 100%;
   top: -1px;
   padding: 0 0 13px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .info-section {
+    overflow: hidden;
+    padding: 0 0 0 27px;
+  }
+
+  .list-info {
+    float: left;
+    width: 208px;
+    border-right: 1px solid #ebebeb;
+    padding: 1px 0 0;
+
+    .link-section {
+      display: none;
+    }
+
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 10px 0 10px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .list li {
+      vertical-align: top;
+      padding: 0 0 9px;
+    }
+
+    .list a {
+      display: block;
+      padding: 8px 10px 9px;
+      color: #5e5e5e;
+
+      &:hover {
+        font-weight: bold;
+        background: #e9eaea;
+        text-decoration: none;
+      }
+    }
+
+    .list .CMSListMenuHighlightedLI a {
+      font-weight: bold;
+      background: #e9eaea;
+      text-decoration: none;
+    }
+  }
 }
 
-.info-container .list-info {
-  float: left;
-  width: 208px;
-  border-right: 1px solid #ebebeb;
-  padding: 1px 0 0;
-}
-
-.info-container .list-info .link-section {
-  display: none;
-}
-
-.info-container .list-info .list {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0 10px;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.info-container .list-info .list li {
-  vertical-align: top;
-  padding: 0 0 9px;
-}
-
-.info-container .list-info .list a {
-  display: block;
-  padding: 8px 10px 9px;
-  color: #5e5e5e;
-}
-
-.info-container .list-info .list .CMSListMenuHighlightedLI a,
-.info-container .list-info .list a:hover {
-  font-weight: bold;
-  background: #e9eaea;
-  text-decoration: none;
-}
-
-.info-container:after,
 .container:after {
   content: "";
   display: block;
@@ -80,100 +90,109 @@
 @media only screen and (max-width:1019px) {
   .info-container {
     margin: 0;
+
+    .list-info {
+      width: 170px;
+
+      .list {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
   }
 
-  .info-container .list-info {
-    width: 170px
-  }
-  .info-container .list-info .list {
-    font-size: 12px;
-    line-height: 14px;
-  }
 }
 
 @media only screen and (max-width:767px),
 screen and (device-width: 320px) {
   .info-container {
     margin: 0;
+
+    .list-info {
+      position: absolute;
+      top: 38px;
+      right: 10px;
+      z-index: 1;
+
+      .link-section {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 6px 2px 6px 2px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        min-width: 149px;
+        color: #fff;
+        text-align: center;
+        background: #048251;
+        text-decoration: none;
+        box-shadow: 0 1px 1px #999;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+
+        span {
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 20px 0 0;
+          background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px;
+        }
+      }
+
+      .list {
+        display: none;
+
+        .CMSListMenuHighlightedLI ul li a {
+          color: #fff;
+        }
+
+        .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
+        .CMSListMenuHighlightedLI ul li a:hover {
+          color: #000;
+        }
+
+        .CMSListMenuHighlightedLI a,
+        a:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .expanded .link-section span {
+      background-position: 100% -57px;
+    }
   }
 
-  .info-container .list-info .link-section {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 6px 2px 6px 2px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    min-width: 149px;
-    color: #fff;
-    text-align: center;
-    background: #048251;
-    text-decoration: none;
-    box-shadow: 0 1px 1px #999;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    bottom: 8px;
-  }
-  .info-container .list-info .link-section span {
-    display: inline-block;
+}
+
+.info-container .list-info .list {
+  li {
     vertical-align: top;
-    padding: 0 20px 0 0;
-    background: url(/App_Themes/PALotteryAll/images/arrow-10.png) no-repeat 100% 5px;
+    padding: 0;
   }
-  .info-container .expanded .link-section span {
-    background-position: 100% -57px;
+  ul {
+    margin: 0;
+    padding: 0;
   }
-  .info-container .list-info {
-    position: absolute;
-    top: 38px;
-    right: 10px;
-  }
-  .info-container .list-info .list {
-    display: none;
-  }
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-    color: #fff;
-  }
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
-  .info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-    color: #000;
-  }
-  .info-container .list-info .list .CMSListMenuHighlightedLI a,
-  .info-container .list-info .list a:hover {
-    color: #000;
-  }
-  .info-container .list-info {
-    z-index: 1;
-  }
-}
 
-.info-container .list-info .list li {
-  vertical-align: top;
-  padding: 0;
-}
+  ul li a,
+  ul li a:link {
+    padding-left: 30px;
+  }
 
-.info-container .list-info .list ul {
-  margin: 0;
-  padding: 0;
-}
+  .CMSListMenuHighlightedLI ul li a {
+    background: none;
+    font-weight: normal;
+  }
 
-.info-container .list-info .list ul li a,
-.info-container .list-info .list ul li a:link {
-  padding-left: 30px;
-}
-
-.info-container .list-info .list .CMSListMenuHighlightedLI ul li a {
-  background: none;
-  font-weight: normal;
-}
-
-.info-container .list-info .list .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
-.info-container .list-info .list .CMSListMenuHighlightedLI ul li a:hover {
-  font-weight: bold;
-  background: #e9eaea;
-  text-decoration: none;
+  .CMSListMenuHighlightedLI ul li.CMSListMenuHighlightedLI a,
+  .CMSListMenuHighlightedLI ul li a:hover {
+    font-weight: bold;
+    background: #e9eaea;
+    text-decoration: none;
+  }
 }
 
 #page-content p {
@@ -195,40 +214,40 @@ screen and (device-width: 320px) {
   list-style: none;
   margin: 0;
   padding: 0 0 0 12px;
-}
 
-.info-container .tabset li {
-  float: left;
-  margin: 0 1px 0 0;
+  li {
+    float: left;
+    margin: 0 1px 0 0;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    min-width: 207px;
+    padding: 7px 2px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #4d4d4d;
+    text-shadow: 0 1px 1px #fff;
+    background: #acacac;
+    border: 1px solid #9a9a9a;
+    border-width: 1px 1px 0;
+    border-color: #646464 #9a9a9a;
+    box-shadow: 0 1px 0 #949494 inset;
+  }
+
+  .active,
+  a:hover {
+    text-decoration: none;
+    background: #f8f5f5;
+    border-color: #646464 #d7d4d4;
+    box-shadow: 0 1px 0 #d5d2d2 inset;
+  }
 }
 
 #page-content .tabset li {
   margin-bottom: 0;
-}
-
-.info-container .tabset a {
-  display: block;
-  text-align: center;
-  min-width: 207px;
-  padding: 7px 2px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: bold;
-  color: #4d4d4d;
-  text-shadow: 0 1px 1px #fff;
-  background: #acacac;
-  border: 1px solid #9a9a9a;
-  border-width: 1px 1px 0;
-  border-color: #646464 #9a9a9a;
-  box-shadow: 0 1px 0 #949494 inset;
-}
-
-.info-container .tabset .active,
-.info-container .tabset a:hover {
-  text-decoration: none;
-  background: #f8f5f5;
-  border-color: #646464 #d7d4d4;
-  box-shadow: 0 1px 0 #d5d2d2 inset;
 }
 
 .info-container .tab-list {
@@ -255,17 +274,31 @@ screen and (device-width: 320px) {
   font-size: 24px;
 }
 
-#page-content.page-content-games #DailyDrawDraws .circle-list li,
-#page-content.page-content-games #jackpotDraw .circle-list li {
-  background: none;
-  background-image: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif);
-  background-repeat: no-repeat;
-  background-position: top left;
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 5px;
-  line-height: normal;
+#page-content.page-content-games  {
+  #DailyDrawDraws .circle-list li,
+  #jackpotDraw .circle-list li {
+    background: none;
+    background-image: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 44px;
+    height: 38px;
+    font-size: 30px;
+    padding-top: 5px;
+    line-height: normal;
+  }
+
+  #DailyDrawDraws .circle-list li.wildball span {
+    width: 44px;
+    height: 38px;
+    font-size: 30px;
+    padding-top: 6px;
+    line-height: normal;
+  }
+
+  #DailyDrawDraws .circle-list li img {
+    width: 53px;
+  }
 }
 
 .circle-list li.wildball {
@@ -277,37 +310,29 @@ screen and (device-width: 320px) {
   background: none !important;
   border: none !important;
   width: auto !important;
-}
 
-.circle-list li.wildball img {
-  display: inline-block;
-  margin-top: -3px;
-  margin-right: 8px;
-  width: 50px;
-}
+  img {
+    display: inline-block;
+    margin-top: -3px;
+    margin-right: 8px;
+    width: 50px;
+  }
 
-.circle-list li.wildball span {
-  background: #253089;
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 28px;
-  width: 41px;
-  height: 41px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 41px;
-  margin: 0 0 0 -10px;
-  background-size: cover;
-}
-
-#page-content.page-content-games #DailyDrawDraws .circle-list li.wildball span {
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 6px;
-  line-height: normal;
+  span {
+    background: #253089;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 28px;
+    width: 41px;
+    height: 41px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 41px;
+    margin: 0 0 0 -10px;
+    background-size: cover;
+  }
 }
 
 #DailyDraw {
@@ -349,10 +374,6 @@ screen and (device-width: 320px) {
 
 #DailyDrawDraws h1 {
   font-size: 24px;
-}
-
-#page-content.page-content-games #DailyDrawDraws .circle-list li img {
-  width: 53px;
 }
 
 .dailydrawtime {
@@ -397,27 +418,6 @@ span.winning_number,
   background-size: cover;
 }
 
-#page-content.page-content-games #DailyDrawDraws .circle-list li,
-#page-content.page-content-games #jackpotDraw .circle-list li {
-  background: none;
-  background-image: url(https://www.palottery.state.pa.us/Custom/uploadedimages/games-assets/bg-ball-white-44.gif);
-  background-repeat: no-repeat;
-  background-position: top left;
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 5px;
-  line-height: normal;
-}
-
-#page-content.page-content-games #DailyDrawDraws .circle-list li.wildball span {
-  width: 44px;
-  height: 38px;
-  font-size: 30px;
-  padding-top: 6px;
-  line-height: normal;
-}
-
 .container {
   height: 1%;
   position: relative;
@@ -450,12 +450,6 @@ span.winning_number,
     color:$green;
     margin:0 0 25px 0;
   }
-
-}
-
-.tab-td-lefttop {
-  text-align: left;
-  vertical-align: top;
 }
 
 .tab-columns {
@@ -475,7 +469,6 @@ span.winning_number,
   .col:last-child {
     padding-left:3%;
   }
-
 }
 
 .tab {
@@ -503,6 +496,26 @@ span.winning_number,
   &:hover {
     background-color:$btn-background-color-hover;
   }
+}
+
+#howtoplay table {
+
+  margin-bottom:15px;
+  width: 100%;
+
+  tbody td {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: left;
+    vertical-align: top;
+
+    &:first-child {
+      width:36px;
+    }
+  }
+}
+
+.tab-td-lefttop {
 }
 
 @media only screen and (max-width:760px) {
