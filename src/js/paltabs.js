@@ -1,7 +1,7 @@
 var paltabs = (function($){
 	"use strict";
 
-	//Remove tabActive status from all tabs but the first content tab
+	//Remove tabActive class/status from all tabs but the first content tab
 	$('.tab:gt(0)').removeClass('tabActive');
 
 	//Main Tab Transition
@@ -30,7 +30,7 @@ var paltabs = (function($){
 		$('html, body').animate({scrollTop:theAnchor.top}, 500);
 	}
 
-	//RETURNS
+	//RETURNS FOR REFERENCE OUTSIDE SCOPE
 	return {
 		slideToLoc : slideToLoc
 	};
