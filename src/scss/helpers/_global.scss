@@ -10,6 +10,7 @@ body {
 a {
   text-decoration: none;
   color: $link-text-color;
+  transition:.3s;
 
   &:hover {
     text-decoration: underline;
